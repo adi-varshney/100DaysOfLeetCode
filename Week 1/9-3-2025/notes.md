@@ -6,7 +6,7 @@
 ## Approach
 - **Initial Thoughts**:
 
-  * I have seen this problem before and that the best solution would be to ouse a **LIFO** structure(_Stack_ most likely) to track openings. When a closing bracket appears, it must match the most recent unmatched opening, otherwise the string is invalid.
+  * I have seen this problem before and that the best solution would be to use a **LIFO** structure(_Stack_ most likely) to track openings. When a closing bracket appears, it must match the most recent unmatched opening, otherwise the string is invalid.
 
  - **Approach Taken**: In this scenario, I think its best to iterate over the String `s`, and push all the opening braces, `(`, `{`, and `[`, to stack. When we meet a closing brace, `)`, `}`, or `]`, we check if the last open brace was the same type. If so, then we pop the open brace off the stack and continue, but if not, then we return `false` immediately. Also created a helper function to determine if we find mismatched delimiters(_edit: turns out according to LeetCode, this uses more memory although I'm not sure how accurate that is_). If we reach the end of the string and the stack still contains some opening braces, then we know we must be missing appropriate delimiters and that the given String is invalid, thus we return `false`. Otherwise, if the stack is empty we return `true`.
 
