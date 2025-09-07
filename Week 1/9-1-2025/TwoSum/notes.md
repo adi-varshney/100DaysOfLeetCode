@@ -1,10 +1,10 @@
 ## Problem Understanding
-- **Summary**: Given an array and a target, find the (only) two values in the array that sum to target
-- **Input**: An array of integers and a target, which is the sum we need to get to.  
-- **Output**: The positions of the two integers that add up to the target.
+- **Summary**: Given an array and a `target`, find the (only) two values in the array that sum to `target`.
+- **Input**: An array of integers and a `target`, which is the sum we need to get to.  
+- **Output**: The positions of the two integers that add up to the `target`.
 
 ## Approach
-- **Initial Thoughts**: Since there is only one pair of numbers that satisfy the requirements, we just need to find which number has a complement in the array such that: num + complement(of that num) = target
+- **Initial Thoughts**: Since there is only one pair of numbers that satisfy the requirements, we just need to find which number has a complement in the array such that: num + complement(of that num) = `target`.
 
 - **Approach Taken**: HashSet to store 'visited' or 'seen' numbers to track if we have seen a certain numbers complement(complement = target - curr num) yet. Efficient due to its time complexity.
 

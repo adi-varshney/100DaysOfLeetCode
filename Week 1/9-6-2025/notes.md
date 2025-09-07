@@ -5,7 +5,7 @@
 
 ## Approach
 * **Initial Thoughts**:
-  * In Java this is straightforward because `String#indexOf(String)` already implements an efficient substring search.
+  * In Java this is straightforward because `String.indexOf(String)` already implements an efficient substring search.
   * If the language did not provide this, the safe linear-time approach is **KMP** (Knuth–Morris–Pratt). Other options include Boyer–Moore/Horspool or the Two-Way algorithm.
 
 * **Approach Taken**:
