@@ -9,7 +9,6 @@ class Solution {
             while (i >= 0) {
                 if (digits[i] == 9 && i != 0) {
                     i--;
-                    continue;
                 } else if (digits[i] == 9) {
                     int[] arr = new int[digits.length + 1];
                     arr[0] = 1;
