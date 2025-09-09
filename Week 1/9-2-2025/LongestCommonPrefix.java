@@ -1,4 +1,5 @@
-class LongestCommonPrefix {
+// Longest Common Prefix
+class Solution {
     public String longestCommonPrefix(String[] strs) {
         if (strs == null || strs.length == 0)
             return "";
@@ -16,7 +17,7 @@ class LongestCommonPrefix {
     }
 
     private static String LCP(String a, String b) {
-        if ( prefixMatches(a, b, Math.min(a.length(), b.length())) ) {
+        if (prefixMatches(a, b, Math.min(a.length(), b.length()))) {
             if (a.length() <= b.length())
                 return a;
             else
@@ -24,16 +25,16 @@ class LongestCommonPrefix {
         } else {
             int low = 0;
             int high = Math.min(a.length(), b.length());
-            
+
             while (low <= high) {
-                int mid = low + (high - low) / 2;   
+                int mid = low + (high - low) / 2;
                 if (prefixMatches(a, b, mid)) {
                     low = mid + 1;
                 } else {
                     high = mid - 1;
                 }
             }
-            
+
             return a.substring(0, high);
         }
     }

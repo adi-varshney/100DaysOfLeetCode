@@ -1,4 +1,5 @@
-public class RemoveDuplicatesFromSortedArray {
+// Remove Duplicates From Sorted Array
+class Solution {
     public int removeDuplicates(int[] nums) {
         int currPos = 0;
         for (int pointer = 0; pointer<nums.length; pointer++) {
