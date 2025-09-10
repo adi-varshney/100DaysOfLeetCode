@@ -1,3 +1,4 @@
+<!-- Problem 35. Search Insert Position notes -->
 ## Problem Understanding
 
 - **Summary**: Given a *sorted* array(`nums`) of distinct integers(`int[]`) and a `target` value, return the index if the `target` is found. If not, return the index where it would be if it were inserted in order(hypothetically, pushing all indices after that index one position forward). Solution must be O(log n)

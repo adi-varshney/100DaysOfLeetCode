@@ -1,3 +1,4 @@
+<!-- Problem 28. Find the Index of the First Occurrence in a String notes -->
 ## Problem Understanding
 * **Summary**: Given two *Strings* `needle` and `haystack`, return the index of the **first** occurrence of `needle` in `haystack`, or `-1` if it does not occur.
 * **Input**: Two strings, `needle` and `haystack`.
