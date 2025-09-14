@@ -1,3 +1,6 @@
+// 69. Sqrt(x)
+// https://leetcode.com/problems/sqrtx/description/
+
 class Solution {
     public int mySqrt(int x) {
         if ( x == 0 )

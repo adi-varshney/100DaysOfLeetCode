@@ -1,3 +1,6 @@
+// 67. Add Binary
+// https://leetcode.com/problems/add-binary/description/
+
 class Solution {
     public String addBinary(String a, String b) {
         if ( a.equals("0") )

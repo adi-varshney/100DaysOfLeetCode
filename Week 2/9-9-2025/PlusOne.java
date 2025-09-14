@@ -1,4 +1,6 @@
-// Plus One
+// 66. Plus One
+// https://leetcode.com/problems/plus-one/description/
+
 class Solution {
     public int[] plusOne(int[] digits) {
         if (digits[digits.length - 1] != 9) {
