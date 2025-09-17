@@ -1,17 +1,21 @@
 // 100. 
 // https://leetcode.com/problems/length-of-last-word/description/
 
-
 // Definition for a binary tree node.
 class TreeNode {
     int val;
     TreeNode left;
     TreeNode right;
+
     @SuppressWarnings("unused")
     TreeNode() {
     }
+
     @SuppressWarnings("unused")
-    TreeNode(int val) { this.val = val; }
+    TreeNode(int val) {
+        this.val = val;
+    }
+
     @SuppressWarnings("unused")
     TreeNode(int val, TreeNode left, TreeNode right) {
         this.val = val;
@@ -20,7 +24,6 @@ class TreeNode {
     }
 }
 
-@SuppressWarnings("unused")
 class Solution {
     public boolean isSameTree(TreeNode p, TreeNode q) {
         if (p == null || q == null) {
