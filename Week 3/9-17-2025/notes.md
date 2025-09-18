@@ -12,7 +12,7 @@
 
 - "Symmetric" → literally a mirror. So I shouldn’t walk one tree. I should compare **left vs right at the same time**.
 - If both nodes are `null`, that spot is fine. If one’s `null` and the other isn’t, that breaks symmetry. If values differ, also a break.
-- The real move is **cross children**: compare `L.left` with `R.right` and `L.right` with `R.left`. That’s the '_mirror_'.
+- The real idea here is **cross children**. We need to compare `L.left` with `R.right` and `L.right` with `R.left`. That’s the '_mirror_'.
 - This is just recursive DFS on **pairs**(No fancy traversal needed).
 - I kept thinking the parent compare should also "catch" the kids, but that check actually happens **in the next recursive call** on those two child nodes, not at the parent level.
 - Never touch `.val` before confirming not `null`. Early returns save me from Null Pointer Exceptions(I'll be referring to them as NPEs from here on forward).
