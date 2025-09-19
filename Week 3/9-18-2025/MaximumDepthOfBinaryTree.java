@@ -5,7 +5,7 @@
 
 import java.util.ArrayDeque;
 
-public class TreeNode {
+class TreeNode {
     @SuppressWarnings("unused")
     int val;
     TreeNode left;
