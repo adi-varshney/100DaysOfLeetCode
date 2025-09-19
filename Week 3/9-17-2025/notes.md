@@ -21,7 +21,7 @@
 
 - Handle root fast: empty tree or single node → `true`; exactly one child → `false`.
 - If `root.left.val == root.right.val`, call a helper with `(left, right)`.
-- **Helper** is a “guard-all-cases-first” style:
+- **Helper** is a "guard-all-cases-first" style:
   - Explicitly checks every `null`/non-`null` combo for the **outer** pair (`left.left` vs `right.right`) and **inner** pair (`left.right` vs `right.left`), returning `false` on any mismatch.
   - If values line up, recurse on mirrored grandchildren:
     - `isSymmetric(left.left, right.right)` and `isSymmetric(right.left, left.right)`.
