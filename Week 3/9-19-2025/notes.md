@@ -1,13 +1,13 @@
 <!-- Problem 110. Balanced Binary Tree notes -->
 
-# Problem Understanding
+## Problem Understanding
 - **Summary:** Determine if a binary tree is **height-balanced** (the height difference between left and right subtrees of every node is at most 1).  
 - **Input:** A _TreeNode_ which is the `root` of the binary tree (can be `null`).  
 - **Output:** A _boolean_, `true` if the tree is height-balanced, otherwise `false`.  
 
-# Approach
+## Approach
 
-## Initial Thoughts
+### Initial Thoughts
 - Right away, I thought of using recursion to compute heights of subtrees and check differences.  
 - For each node:  
   - Get left subtree height  
@@ -16,9 +16,11 @@
 - This works, but calling `height()` repeatedly might cause inefficiency.  
 - I realized this is basically a DFS where I’m recomputing a lot of work (top-down style), so worst-case performance could be bad(I basically understood there was a better solution but needed help exploring/implementing this better solution).
 
-## Approach Taken (my two solutions)
+---
 
-### **First solution (intuitive O(N²))**
+### Approach Taken (my two solutions)
+
+#### **First solution (intuitive O(N²))**
 - Recursive function `isBalanced(root)`:
   - If null or single node → balanced.  
   - Get heights of left and right using helper `longestSubtree`.  
@@ -32,7 +34,7 @@
 
 ---
 
-### **Second solution (optimized O(N))**
+#### **Second solution (optimized O(N))**
 - Use **post-order DFS** (bottom-up).  
 - Helper `subtreeHeight(node)` returns height if subtree is balanced, else returns `-1`.  
 - At each node:
@@ -53,12 +55,7 @@
 ## Edge Cases
 - -->
 
-# Optimization
-- The **bottom-up sentinel method** avoids redundant height calls.  
-- Detect imbalance early and stop further recursion.  
-- Classic case where **post-order traversal** is better because parent’s validity depends on children’s info.
-
-# Key Takeaways
+## Key Takeaways
 - If you need info from children to decide a parent’s state, use **post-order DFS**(essentially, traverse left subtree of parent then right subtree of parent for every node to determine current state).  
 - Avoid recomputation by **carrying results upward** (height + balance info together).  
 - Early exit strategies (like using `-1` as a 'sentinel') make recursive tree algorithms more efficient.
