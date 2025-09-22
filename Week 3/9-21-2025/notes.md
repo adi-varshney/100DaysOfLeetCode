@@ -41,16 +41,23 @@
 - **Time:** `O(N)`, each node visited once.
 - **Space:** `O(W)`, where W is the max width of the tree (≤ N).
 
-## Key Takeaways
-
-- BFS is usually best for **minimum depth** problems because it can short-circuit as soon as a leaf is found.
-- Always remember to enqueue the root(i might have made that mistake once, oopsieee)!
-- Be careful with pointer vs value types in C++ (`TreeNode*` vs `TreeNode`).
-  - Still a little confused on this so will have to look into this more later
-
 ## Alternative Solutions
 
 - **Recursive DFS:**
+
   - Explore left and right subtrees, return `1 + min(leftDepth, rightDepth)` but carefully handle null children.
-  - Works but explores all paths, even when the min is already found.
-- **DFS with stack (iterative):** Similar to BFS but less efficient for min depth since you may traverse deeper unnecessarily.
+  - **Time:** O(N) (must visit all nodes).
+  - **Space:** O(H), where H is tree height (worst case O(N) for skewed tree, O(log N) for balanced).
+
+- **DFS with stack (iterative):**
+  - Use a stack to simulate recursion, pushing nodes with their depth.
+  - Traverse until finding a leaf, but you may explore deeper paths unnecessarily.
+  - **Time:** O(N).
+  - **Space:** O(H), similar to recursive DFS.
+
+## Key Takeaways
+
+- BFS is usually best for **minimum depth/shortest path** problems because it can short-circuit as soon as a leaf is found.
+- Always remember to enqueue the root(i might have made that mistake once, oopsieee)!
+- Be careful with pointer vs value types in C++ (`TreeNode*` vs `TreeNode`).
+  - Still a little confused on this so will have to look into this more later
