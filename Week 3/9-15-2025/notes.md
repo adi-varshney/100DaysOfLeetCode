@@ -38,10 +38,10 @@
 - **Obstacles Faced**:
 - **Edge Cases**: None -->
 
-## Optimization
+## Complexity
 
-- **Time Complexity**: `O(N)`, where `N` is the number of nodes visited across the trees (in the equal-size/equal-shape case, that’s all nodes). Each node is compared once.
-- **Space Complexity**: `O(H)` for recursion stack, where `H` is tree height (worst-case `O(N)`, best/avg balanced `O(log N)`).
+- **Time**: `O(N)`, where `N` is the number of nodes visited across the trees (in the equal-size/equal-shape case, that’s all nodes). Each node is compared once.
+- **Space**: `O(H)` for recursion stack, where `H` is tree height (worst-case `O(N)`, best/avg balanced `O(log N)`).
 
 ## Alternative Solutions
 

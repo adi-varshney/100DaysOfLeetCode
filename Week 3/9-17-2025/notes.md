@@ -38,10 +38,10 @@
 - Structural asymmetry deeper down (one missing mirrored node).
 - Very tall/skewed trees (stack depth).
 
-### Optimization
+### Complexity
 
-- **Time Complexity**: `O(N)`, each node participates in at most one mirrored comparison.
-- **Space Complexity**: `O(H)` recursion stack (balanced `≈ O(log N)`, skewed `≈ O(N)`).
+- **Time**: `O(N)`, each node participates in at most one mirrored comparison.
+- **Space**: `O(H)` recursion stack (balanced `≈ O(log N)`, skewed `≈ O(N)`).
 
 <!-- ## Alternative Solutions
 - none -->

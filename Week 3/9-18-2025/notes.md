@@ -42,7 +42,7 @@
 
 - none -->
 
-## Optimization
+## Complexity
 
 - **Time:** **O(N)** for both BFS and DFS (each node visited once).
 - **Space:**

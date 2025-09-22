@@ -1,4 +1,5 @@
 <!-- Problem 88. Merge Sorted Array notes -->
+
 ## Problem Understanding
 
 - **Summary**: Merge two **sorted** arrays `nums1` (size `m + n`, last `n` are 0 placeholders) and `nums2` (size `n`) into `nums1` in **non-decreasing** order.
@@ -32,10 +33,10 @@
 - **Obstacles Faced**: My first thought, which was "merge forward," risks overwriting `nums1`’s valid elements before they’re compared. Writing from the end avoids that entire headache.
 <!-- - **Edge Cases**: None -->
 
-## Optimization
+## Complexity
 
-- **Time Complexity**: `O(M + N)`, every element is written exactly once(thus add `M` elements of `nums1` and `N` elements of `nums2`).
-- **Space Complexity**: `O(1)`, all in place, just pointers.
+- **Time**: `O(M + N)`, every element is written exactly once(thus add `M` elements of `nums1` and `N` elements of `nums2`).
+- **Space**: `O(1)`, all in place, just pointers.
 
 <!-- ## Alternative Solutions
 
