@@ -1,4 +1,4 @@
-# Problem 121. Best Time to Buy and Sell Stock notes
+# Problem 121. Best Time to Buy and Sell Stock - Notes
 
 ## Problem Understanding
 - **Summary:** Find the maximum profit from exactly one buy and one later sell. If profit is never positive, return 0.

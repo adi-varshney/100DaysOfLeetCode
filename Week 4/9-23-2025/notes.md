@@ -1,6 +1,6 @@
 <!-- Problem 118. Pascal's Triangle notes -->
 
-# Problem 118. Pascal's Triangle notes
+# Problem 118. Pascal's Triangle - Notes
 
 ## Problem Understanding
 - **Summary:** Return the first **numRows** of Pascal’s triangle

@@ -1,4 +1,4 @@
-# Problem 119. Pascal's Triangle II notes
+# Problem 119. Pascal's Triangle II - Notes
 
 ## Problem Understanding
 - **Summary:** Return the **rowIndex**-th row of Pascal’s triangle using 0 indexing
