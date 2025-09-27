@@ -1,4 +1,4 @@
-<!-- Problem 69. Sqrt(x) notes -->
+# Problem 69. Sqrt(x) - Notes
 ## Problem Understanding
  - **Summary**: Given a non-negative integer `x`, return the *integer* square root of `x` (i.e., ⌊√`x`⌋). No using exponent functions/operators.
  - **Input**: One *integer* `x` where `0 ≤ x ≤ 2^31 − 1`.

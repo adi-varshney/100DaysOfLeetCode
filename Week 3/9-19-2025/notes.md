@@ -1,4 +1,4 @@
-<!-- Problem 110. Balanced Binary Tree notes -->
+# Problem 110. Balanced Binary Tree - Notes
 
 ## Problem Understanding
 

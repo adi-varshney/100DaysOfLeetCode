@@ -1,4 +1,4 @@
-<!-- Problem 6. One Plus notes -->
+# Problem 6. One Plus - Notes
 ## Problem Understanding
 - **Summary**: Given an `int[]` which represents a number(each index is a digit of the entire number), increment it by one, and return the array of the incremented number. 
 - **Input**: An *integer array*(`int[]`), digits.

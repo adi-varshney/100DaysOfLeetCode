@@ -1,4 +1,4 @@
-<!-- Problem 58. Length of Last Word notes -->
+# Problem 58. Length of Last Word - Notes
 ## Problem Understanding
 
 - **Summary**: Given a _String_ of words, return the length of the last word in the _String_. There can be extra spaces anywhere, and a word is defined as an consecutive letters without spaces in between them.

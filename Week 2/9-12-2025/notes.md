@@ -1,4 +1,4 @@
-<!-- Problem 83. Remove Duplicates from Sorted List notes -->
+# Problem 83. Remove Duplicates from Sorted List - Notes
 ## Problem Understanding
  - **Summary**: Given the `head` of a *sorted* singly linked list, delete duplicates so each value appears once, and return the list **still sorted**.
  - **Input**: `head` → first node of a singly linked list where node values are in non-decreasing order.

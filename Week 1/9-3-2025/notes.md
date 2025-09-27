@@ -1,4 +1,4 @@
-<!-- Problem 20. Valid Parenthesis notes -->
+# Problem 20. Valid Parenthesis - Notes
 ## Problem Understanding
  - **Summary**: Given a string `s` containing only the characters `(`,`)`,`[`,`]`,`{`,`}`, determine whether it’s valid. A string is valid if every opening bracket is closed by the same type of bracket and in the correct order.
  - **Input**: A Strings(containing series of `(`,`)`,`[`,`]`,`{`,`}`).

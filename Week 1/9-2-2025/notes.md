@@ -1,4 +1,4 @@
-<!-- Problem 14. Longest Common Prefix notes -->
+# Problem 14. Longest Common Prefix - Notes
 ## Problem Understanding
 - **Summary**: Given a list of Strings(words), find the longest common sequence of letters at the beginning of each word(I'll refer to it longest common prefix as LCP from now on). 
 - **Input**: A list of Strings(words).

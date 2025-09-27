@@ -1,4 +1,4 @@
-<!-- Problem 70. Climbing Stairs notes -->
+# Problem 70. Climbing Stairs - Notes
 ## Problem Understanding
 
 - **Summary**: Given an _integer_ `n`, return the number of distinct ways to climb to the top when each move can be `1` or `2` steps.

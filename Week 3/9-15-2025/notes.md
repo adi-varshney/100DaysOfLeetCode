@@ -1,4 +1,4 @@
-<!-- Problem 100. Same Tree notes -->
+# Problem 100. Same Tree - Notes
 
 ## Problem Understanding
 

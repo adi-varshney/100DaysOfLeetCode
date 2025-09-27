@@ -1,4 +1,4 @@
-<!-- Problem 101. Symmetric Tree notes -->
+# Problem 101. Symmetric Tree - Notes
 
 ## Problem Understanding
 

@@ -1,4 +1,4 @@
-<!-- Problem 21. Merge Two Sorted Lists notes -->
+# Problem 21. Merge Two Sorted Lists - Notes
 ## Problem Understanding
  - **Summary**: Given the heads(_first element/position_) for two(2) __sorted__ linked lists, merge both lists into 1 __sorted__ linked list.
  - **Input**: Two(2) `ListNode` objects, each representing the head of a sorted linked list, where each node stores an `integer` value.

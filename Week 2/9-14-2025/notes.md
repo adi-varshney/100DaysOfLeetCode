@@ -1,3 +1,4 @@
+# Problem 94. Binary Tree Inorder Traversal - Notes
 ## Problem Understanding
 
 - **Summary**: Given a binary tree, return its inorder traversal (Left → Node → Right) as a list of integers.

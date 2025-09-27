@@ -1,4 +1,4 @@
-<!-- Problem 111. Minimum Depth of Binary Tree notes -->
+# Problem 111. Minimum Depth of Binary Tree - Notes
 
 ## Problem Understanding
 

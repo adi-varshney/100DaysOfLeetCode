@@ -1,4 +1,4 @@
-<!-- Problem 88. Merge Sorted Array notes -->
+# Problem 88. Merge Sorted Array - Notes
 
 ## Problem Understanding
 

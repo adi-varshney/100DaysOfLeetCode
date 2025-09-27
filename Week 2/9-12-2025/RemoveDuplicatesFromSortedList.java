@@ -8,13 +8,16 @@ class ListNode {
     int val;
     ListNode next;
 
+    @SuppressWarnings("unused")
     ListNode() {
     }
 
+    @SuppressWarnings("unused")
     ListNode(int val) {
         this.val = val;
     }
 
+    @SuppressWarnings("unused")
     ListNode(int val, ListNode next) {
         this.val = val;
         this.next = next;
@@ -23,6 +26,7 @@ class ListNode {
 
 // My initial solution using a HashSet to track seen values.
 // This works for unsorted lists but uses extra space.
+@SuppressWarnings("unused")
 class Solution {
     public ListNode deleteDuplicates(ListNode head) {
         HashSet<Integer> seen = new HashSet<>();
@@ -45,6 +49,7 @@ class Solution {
 
 // Optimized solution that leverages the sorted property of the list.
 // This approach uses O(1) extra space and is more efficient.
+@SuppressWarnings("unused")
 class Solution2 {
     public ListNode deleteDuplicates(ListNode head) {
         if (head == null || head.next == null)

@@ -1,4 +1,4 @@
-<!-- Problem 26. Remove Duplicates from Sorted Array notes -->
+# Problem 26. Remove Duplicates from Sorted Array - Notes
 ## Problem Understanding
  - **Summary**: Given a sorted list(least to greatest), remove all duplicate integers/list all unique integers in order and find total # of unique integers.
  - **Input**: An integer array(`int[]`) that contains the sorted list(with duplicates).

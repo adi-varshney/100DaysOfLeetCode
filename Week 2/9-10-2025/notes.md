@@ -1,4 +1,4 @@
-<!-- Problem 67. Add Binary -->
+# Problem 67. Add Binary - Notes
 ## Problem Understanding
  - **Summary**: Given two *binary* strings `a` and `b`, return their sum as a *binary* string.
  - **Input**: Two strings, `a` and `b`, each made of `'0'` and `'1'` only (no leading zeros except the number `0` itself).

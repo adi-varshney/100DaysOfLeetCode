@@ -5,20 +5,22 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-
 // Definition for a binary tree node.
 class TreeNode {
     int val;
     TreeNode left;
     TreeNode right;
 
+    @SuppressWarnings("unused")
     TreeNode() {
     }
 
+    @SuppressWarnings("unused")
     TreeNode(int val) {
         this.val = val;
     }
 
+    @SuppressWarnings("unused")
     TreeNode(int val, TreeNode left, TreeNode right) {
         this.val = val;
         this.left = left;
@@ -26,6 +28,7 @@ class TreeNode {
     }
 }
 
+@SuppressWarnings("unused")
 class Solution {
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> ans = new ArrayList<>();
@@ -71,6 +74,7 @@ class Solution {
 }
 
 // much cleaner solution
+@SuppressWarnings("unused")
 class Solution2 {
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> ans = new ArrayList<>();

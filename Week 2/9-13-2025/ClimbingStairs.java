@@ -6,7 +6,7 @@ import java.util.HashMap;
 
 class Solution {
     public int climbStairs(int n) {
-        if ( n == 1 || n == 2 || n == 3)
+        if (n == 1 || n == 2 || n == 3)
             return n;
 
         HashMap<Integer, Integer> steps = new HashMap<>();
@@ -16,8 +16,8 @@ class Solution {
         steps.put(3, 3);
 
         int i = 4;
-        while ( i <= n ) {
-            steps.put(i, steps.get(i-1) + steps.get(i-2));
+        while (i <= n) {
+            steps.put(i, steps.get(i - 1) + steps.get(i - 2));
 
             i++;
         }

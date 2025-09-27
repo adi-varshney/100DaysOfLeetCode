@@ -1,4 +1,4 @@
-<!-- Problem 108. Convert Sorted Array to Binary Search Tree notes -->
+# Problem 108. Convert Sorted Array to Binary Search Tree - Notes
 
 ## Problem Understanding
 - **Summary:** Build a **height-balanced BST** from a **sorted (ascending)** integer array.
