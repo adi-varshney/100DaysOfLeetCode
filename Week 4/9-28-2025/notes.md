@@ -12,9 +12,9 @@
 ### Initial Thoughts
 
 - First thing I thought of was just tracking visited nodes with a set that works but takes `O(n)` extra space
-- Then I realized you could also mutate the list by marking values as visited (like setting them to `INT_MAX`) which technically passed but felt like a hack and probably not the intended solution
+- Then I realized you could also mutate the list by marking values as visited (like setting them to `INT_MAX`) which technically passed but felt like a hack/cheesed solution and probably not the intended solution
 - At that point I was stuck because both ideas had drawbacks (extra memory vs mutating input)
-- I looked back at the problem page and saw one of the tagged topics was “two pointers” which made me think about fast/slow pointer patterns
+- I looked back at the problem page and saw one of the tagged topics was "two pointers" which made me think about fast/slow pointer patterns
 - Since we can only start from the head node it couldn’t be left/right pointer style it had to be slow/fast traversal
 - From there I pieced together the idea that if one pointer moves twice as fast as the other they will meet again if a cycle exists
 - That realization gave me the intended approach (fast and slow two pointer method) even though I didn’t know the formal name for it
