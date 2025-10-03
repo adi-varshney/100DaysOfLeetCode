@@ -16,7 +16,6 @@ public:
         // 26^4 + 26^3 + 26^2 + 26^1 + 26^0 = 475255 - AAAAA
 
         while (columnNumber > 0) {
-            int carry = 0;
             if (columnNumber % 26 == 0) {
                 ans = ('Z') + ans;
                 columnNumber /= 26;
@@ -24,7 +23,7 @@ public:
                 continue;
             }
 
-            ans = (char)('@' + carry + columnNumber % 26) + ans;
+            ans = (char)('@' + columnNumber % 26) + ans;
             columnNumber -= columnNumber % 26;
             columnNumber /= 26;
         }
