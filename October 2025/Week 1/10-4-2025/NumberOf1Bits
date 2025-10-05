@@ -1,0 +1,46 @@
+// 191. Number of 1 Bits
+// https://leetcode.com/problems/number-of-1-bits/
+
+using namespace std;
+
+// first solution
+#include <cmath>
+class Solution
+{
+public:
+    int hammingWeight(int n)
+    {
+        int ans = 0;
+
+        while (n)
+        {
+            if (n - pow(2, (int)log2(n)) >= 0)
+            {
+                n -= pow(2, (int)log2(n));
+                ans++;
+            }
+        }
+
+        return ans;
+    }
+};
+
+// second solution(ran better memory for some reason? although that might just be discrepancy in leetcode's system)
+class Solution2
+{
+public:
+    int hammingWeight(int n)
+    {
+        int ans = 0;
+
+        while (n)
+        {
+            if (n % 2 == 1)
+                ans++;
+
+            n >>= 1;
+        }
+
+        return ans;
+    }
+};
