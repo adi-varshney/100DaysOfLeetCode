@@ -1,9 +1,9 @@
 # Problem 202. Happy Number - Notes
 
 ## Problem Understanding
-- A number is happy if repeatedly replacing it with the sum of squares of its digits eventually reaches 1
-- If the process never reaches 1 the sequence enters a cycle that excludes 1
-- Return true if n is happy and false otherwise
+- **Summary:** A number is happy if repeatedly replacing it with the sum of squares of its digits eventually reaches 1
+- **Input:** If the process never reaches 1 the sequence enters a cycle that excludes 1
+- **Output:** Return true if n is happy and false otherwise
 
 ## Approach
 ### Initial Thoughts
