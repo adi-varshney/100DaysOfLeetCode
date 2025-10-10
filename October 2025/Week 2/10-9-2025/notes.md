@@ -8,23 +8,19 @@
 ## Approach
 
 ### Initial Thoughts
-- Reversing a singly linked list can be done iteratively by walking the list once and flipping each `next` pointer to point backward.
-- Track three moving pointers to avoid losing access to the remainder of the list.
-- Edge considerations include an empty list and a single-node list.
+- Flip each node’s `next` pointer so links point backward.
+- Keep three moving pointers so the remainder of the list is never lost.
+- Handle empty and single-node lists cleanly.
 
 ### Approach Taken
-- Used three pointers: `prev`, `head`, and `n` where `n` is `head->next`.
-- Loop while `n` is not `nullptr`.  
-  - Redirect `head->next` to `prev`.  
-  - Advance `prev` to `head`, `head` to `n`, and `n` to `n->next`.
-- After the loop, `head` sits on the original tail. Created a new node `new ListNode(head->val, prev)` and returned it as the reversed list’s head.
-- Note on behavior:  
-  - This matches the submitted code and produces the correct reversed order.  
-  - It allocates one new node for the former tail value and leaves the original tail node unreachable.
+- Used three pointers: `prev`, `head`, and `n` where `n` starts as `head->next`.
+- While `n` is not `nullptr`, rewired `head->next = prev`, advanced `prev = head`, advanced `head = n`, advanced `n = n->next`.
+- After the loop, rewired the final node with `head->next = prev` and returned `head` as the new head.
+- No new allocations were made and the reversal is fully in-place.
 
 ### Complexity:
-- **Time:** `O(n)` for a single pass over the list.
-- **Space:** `O(1)` auxiliary space, though it performs one extra node allocation.
+- **Time:** `O(n)`
+- **Space:** `O(1)`
 
 <!--
 ## Challenges
@@ -35,12 +31,10 @@
 -->
 
 ## Alternative Solutions
-- **Iterative in-place reversal without allocation:**  
-  - Continue the loop until `head` becomes `nullptr`, always rewiring `head->next = prev`, then return `prev` directly with no new node created.
-- **Recursive reversal:**  
-  - Recurse to the end, then unwind by pointing `next->next = node` and `node->next = nullptr`. Simpler to read but uses call stack `O(n)`.
+- Iterative variant using only two pointers by storing `next` in a temporary variable each step.
+- Recursive reversal that reaches the tail then sets `next->next = node` and `node->next = nullptr` while unwinding, with call-stack space `O(n)`.
 
 ## Key Takeaways
-- Three-pointer iteration is the standard pattern for reversing a singly linked list in `O(n)` time and `O(1)` space.
-- Avoid unnecessary allocations during reversal to prevent memory leaks and keep the operation purely in-place.
-- Always check trivial cases early(empty list and single-node list should return as-is).
+- The three-pointer pattern is the standard in-place reversal for singly linked lists.
+- Returning the last processed node after wiring its `next` to `prev` yields the new head without extra allocation.
+- Always consider trivial cases early to keep code simple and safe.
