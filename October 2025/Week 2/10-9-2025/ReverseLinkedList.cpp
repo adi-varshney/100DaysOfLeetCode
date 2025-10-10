@@ -13,26 +13,23 @@ struct ListNode
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
 
-class Solution
-{
+class Solution {
 public:
-    ListNode *reverseList(ListNode *head)
-    {
+    ListNode* reverseList(ListNode* head) {
         if (head == nullptr)
             return head;
-
-        ListNode *prev = nullptr;
-        ListNode *n = head->next;
-        while (n != nullptr)
-        {
+        
+        ListNode* prev = nullptr;
+        ListNode* n = head->next;
+        while (n != nullptr) {
             head->next = prev;
             prev = head;
             head = n;
             n = n->next;
         }
 
-        prev = new ListNode(head->val, prev);
+        head->next = prev;
 
-        return prev;
+        return head;
     }
 };
