@@ -33,7 +33,6 @@
     "xstring": "cpp",
     "xtr1common": "cpp",
     "xutility": "cpp",
-    "numberof1bits": "cpp",
-    "iostream": "cpp"
+    "numberof1bits": "cpp"
   }
 }

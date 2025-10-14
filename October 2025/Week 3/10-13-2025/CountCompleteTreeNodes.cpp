@@ -25,7 +25,7 @@ public:
         if (root->left == nullptr) return 1;
 
         int d = findLeftDepth(root);
-        // cout << d << endl;
+        cout << d << endl;
 
         int left  = 1 << d;
         int right = (1 << (d + 1)) - 1;
@@ -39,11 +39,11 @@ public:
 
             TreeNode* curr = root;
 
-            // cout << endl << "left: " << left << "\nright: " << right << "\n\n";
-            // cout << "mid: " << mid << "\n";
+            cout << endl << "left: " << left << "\nright: " << right << "\n\n";
+            cout << "mid: " << mid << "\n";
 
             while (mask && curr) {
-                // cout << "curr node value: " << curr->val << "\n";
+                cout << "curr node value: " << curr->val << "\n";
                 if (mid & mask) 
                     curr = curr->right;    // bit 1 -> go right
                 else             
