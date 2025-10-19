@@ -7,7 +7,7 @@
 using namespace std;
 
 // My 1st approach
-class Solution1 {
+class Solution {
 public:
     vector<string> ans;
     const vector<int>* numbers = nullptr;

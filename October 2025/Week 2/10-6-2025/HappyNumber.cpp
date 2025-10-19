@@ -5,7 +5,7 @@ using namespace std;
 
 // Solution 1: HashSet
 #include <unordered_set>
-class Solution1 {
+class Solution {
 public:
     bool isHappy(int n) {
         unordered_set<int> calculated;

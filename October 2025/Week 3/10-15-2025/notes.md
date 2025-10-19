@@ -17,11 +17,11 @@
 
 ### Approach Taken
 - Two recursive implementations were written:
-  - **Solution1:** Recursive approach with string manipulation using `string_view` to parse and extend the last range. It maintains an internal recursive call stack where the function builds and finalizes ranges one at a time.
+  - **Solution 1:** Recursive approach with string manipulation using `string_view` to parse and extend the last range. It maintains an internal recursive call stack where the function builds and finalizes ranges one at a time.
     - Each recursive call returns the *current working range* while storing finalized ranges in `ans`.
     - Uses the `find("->")` operation to detect whether the range is a single value or a span.
     - If the current number is consecutive with the last, the range is extended; otherwise, the completed range is pushed to `ans`.
-  - **Solution2:** A cleaner recursive helper approach without string parsing.
+  - **Solution 2:** A cleaner recursive helper approach without string parsing.
     - A helper function processes from index `i`, extending `j` while numbers remain consecutive.
     - Adds the constructed range to `ans` (`"a->b"` or `"a"`) and recurses from the next index after the range.
 
