@@ -2,10 +2,9 @@
 
 ## Problem Understanding
 
-- Reverse the digits of a signed 32-bit integer `x` and return the reversed number.
-- If the reversed integer exceeds the signed 32-bit range [`-2^31`, `2^31 - 1`], return `0`.
-- Input may include negative values, and leading zeros in the reversed result are ignored.
-- You cannot use 64-bit integers to store intermediate results.
+- **Summary:** Reverse the digits of a signed 32-bit integer `x` and return the reversed number.
+- **Input:** An _int_(that may include negative values).
+- **Output:** The reversed _int_. Leading zeros in the reversed result are ignored. If the reversed integer exceeds the signed 32-bit range [`-2^31`, `2^31 - 1`], return `0`.
 
 ## Approach
 
