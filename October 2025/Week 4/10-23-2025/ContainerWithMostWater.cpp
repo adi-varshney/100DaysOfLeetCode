@@ -34,7 +34,7 @@ public:
 };
 
 // Solution 2, slightly more optimized two-pointer approach
-class Solution
+class Solution2
 {
 public:
     int maxArea(vector<int> &height)

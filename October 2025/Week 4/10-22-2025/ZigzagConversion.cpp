@@ -67,7 +67,7 @@ public:
 
 // solution 2, best
 // uses vector of strings to store the zigzag pattern
-class Solution
+class Solution2
 {
 public:
     string convert(string s, int numRows)
