@@ -2,6 +2,7 @@
 // https://leetcode.com/problems/container-with-most-water/
 
 #include <vector>
+#include <algorithm>
 using namespace std;
 
 // Solution 1, my original two-pointer approach
